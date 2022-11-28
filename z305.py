@@ -22,4 +22,18 @@ def A(arr):
 
 #A(segmented[0])
 
+def isGood(arr):
+    for m in arr:
+        if int(m, 2) >= 9:
+            return False
+    return True
 
+def B(arr):
+    for k in arr:
+        if isGood(k):
+            print("yes")
+        else:
+            print("no")
+
+
+B(segmented)
