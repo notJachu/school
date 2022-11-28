@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1600150827 source:/home/dawids19e/Pulpit/prace/klasa 2/mothods.cpp
+	"mothods.h"
+	<fstream>
+
+1600150793 /home/dawids19e/Pulpit/prace/klasa 2/include/mothods.h
+	<iostream>
+
+1600151123 source:/home/dawids19e/Pulpit/prace/klasa 2/main.cpp
+	<iostream>
+	"mothods.h"
+

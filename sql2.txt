@@ -1,0 +1,7 @@
+select distinct towar.nazwa from dostawa, towar where dostawa.towar = towar.id and dostawa.ilosc = 122;
+select distinct imie, nazwisko from sprzedaz, klienci where id_towar = 3 and klienci.id = sprzedaz.id_klient;
+select firma, concat(imie," ", nazwisko, " ", adres, " ", miasto) as dane from klienci;
+select nazwa, avg(ilosc) from dostawa, towar WHERE dostawa.towar = towar.id GROUP BY nazwa;
+select count(id_towar) from sprzedaz where id_towar = 1;
+select firma, max(ilosc) from klienci, sprzedaz where id_towar = 3 and sprzedaz.id_klient = klienci.id group by firma order by max(ilosc) desc limit 2;
+create table cena (towar_cena int, id_towar INT NOT NULL, foreign key (id_towar) references towar(id);

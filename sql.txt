@@ -1,0 +1,11 @@
+select * from klient where imie="Antoni";
+select * from klient where miasto="Gdańsk" and imie !="Stefan";
+select distinct nazwisko from klient;
+select * from klient where miasto="Poznań" and adres like 'Kujawska%';
+select * from klient where imie like 'W%' and nazwisko like 'G%';
+select imie, nazwisko, adres, miasto order by nazwisko, imie asc;
+select * from klient where nip between 2200000000 and 2400000000;
+alter table klient add kraj varchar(255);
+update klient set kraj='Polska';
+delete from klient where imie = 'Ryszard' and nazwisko = 'Biały';
+update klient set adres ='Orion St. 41', miasto ='Berlin', kraj='Niemcy' where nawa = 'Rex' and miasto = 'Wrocław';
